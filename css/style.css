@@ -1,0 +1,647 @@
+/* common css starts here */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@400;600;700&family=Open+Sans&family=Roboto&display=swap');
+:root{
+    --primaryFont:font-family: 'Josefin Sans', sans-serif;
+    --secondaryFont:font-family: 'Roboto', sans-serif;
+    --primaryColor:#151A32;
+    --secondaryColor:#FF6F61;
+    --blackColor:#444444;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,ol,ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+
+
+
+/* common css ends here */
+/* toper starts here */
+#topper{
+    background-color:var(--primaryColor);
+    padding: 7px 0 1px 0;
+}
+#topper .col-lg-5 p,
+#topper .col-sm-8 p{
+    color: white;
+    text-align: center;
+    font-family: var(--primaryFont);
+    font-weight: 400;
+    font-size: 16px;
+
+}
+#topper .col-sm-8 p{
+    color: white;
+    text-align: left;
+    font-family: var(--primaryFont);
+
+}
+#topper .col-lg-5 p span,
+#topper .col-sm-8 p span{
+    color: var(--secondaryColor);
+}
+#topper .col-lg-7{
+    text-align: right;
+    
+}
+#topper .col-sm-4{
+    text-align: right;
+}
+#topper .col-lg-7 ul li{
+    display: inline-block;
+    margin:0 5px ;
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 16px;
+    border-right: 2px solid rgba(147, 145, 145, 0.899);
+} 
+#topper .col-lg-7 ul .icon{
+     border-right: none;
+}
+#topper .col-lg-7 ul .icon a:hover{
+color: var(--secondaryColor);
+transition: 0.55s;
+}
+#topper .col-sm-8{
+    text-align: left;
+}
+#topper .col-sm-4{
+    text-align: right;
+}
+#topper .col-sm-4 ul li a{
+    color: #fff;
+}
+#topper .col-lg-7 ul li a{
+    color: #fff;
+}
+
+#topper .col-lg-7 ul li .order{
+    color: #fff;
+    
+}
+
+#topper .col-lg-7 ul li select{
+   outline: none;
+   border: #151A32;
+   font-family: var(--secondaryFont);
+   font-weight: 400;
+   font-size: 16px;
+   background-color: inherit;
+   color: #fff;
+}
+#topper .col-lg-7 ul li select option{
+    background-color: white;
+    color:black ;
+}
+
+/* toper ends here */
+/* header starts here */
+.myNavbarLg #myNav .menus li a{
+color: var(--blackColor);
+
+}
+.myNavbarLg #myNav .menus li a{
+font-family: var(--primaryFont);
+font-weight: 400;
+font-size: 16px;
+}
+
+
+.myNavbarLg #myNav .menus li a:hover{
+    color: var(--secondaryColor);
+    transition: .35s;
+}
+.myNavbarLg #myNav .menus li {
+   margin:0 8px 0 8px ;
+    position: relative;
+}
+.myNavbarLg #myNav .menus li .list li{
+border: 1px solid white;
+text-align: left;
+}
+.myNavbarLg #myNav .menus li .list li a{
+    color: #F1F3F4;
+    
+}
+.myNavbarLg #myNav .menus li .list{
+   position: absolute; 
+   width: 120px;
+   left: -25px;
+   margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .55s;
+    
+}
+.myNavbarLg #myNav .menus li a{
+    position: relative;
+}
+.myNavbarLg #myNav .menus li a span{
+    transform:translateY(10%) rotate(0deg)scale(.7);
+    transition: .55s;
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+}
+.myNavbarLg #myNav .menus li:hover a span{
+    transform:translateY(10%) rotate(180deg);
+}
+
+.myNavbarLg #myNav .menus li:hover .list{
+   margin-top: 40px;
+    opacity: 1;
+    visibility: visible;
+    
+}
+ .myNavbarLg .iconGroup ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.myNavbarLg .iconGroup ul li a{
+    color: #151A32;
+}
+.myNavbarLg .iconGroup ul li{
+   font-size: 23px;
+    position: relative;
+}
+.myNavbarLg .iconGroup ul li .number{
+    font-size: 16px;
+    background-color: #FF6F61;
+    color: #fff;
+    width: 17px;
+    height: 17px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 80%;
+    position: absolute;
+    top: -5px;
+    left: 8px;
+}
+
+/* header ends here */
+/* banner starts here */
+#banner .banner-slide{
+    height: 350px;
+}
+
+#banner .text{
+    color: #fff;
+    text-align: center;
+    margin-top: 120px;
+}
+#banner .text h2{
+    font-family: var(--primaryFont);
+    font-size: 40px;
+    font-weight: 700;
+
+}
+#banner .text p{
+    font-family: var(--secondaryFont);
+    font-size: 16px;
+    font-weight:400 ;
+}
+
+
+
+
+/* banner ends here */
+/* bannertwo stars here */
+#bannerTwo{
+    background-color: #F1F3F4;   
+margin: 50px 0;
+}
+#bannerTwo .col-lg-5 img{
+width: 500px;
+height: 100%;
+}
+#bannerTwo .col-lg-7 .detail{
+    text-align: center;
+    margin: 5px 0;
+}
+#bannerTwo .col-lg-7 .detail h3{
+    font-size: 30px;
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    color: var(--primaryColor);
+    margin-top: 20px;
+}
+#bannerTwo .col-lg-7 .detail p{
+    font-size: 14px;
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    width: 400px;
+    height: 100px;
+     margin-left: 150px;
+    margin-top: 10px;
+    border-bottom: 1px solid  #BDBDBD;
+    
+}
+#bannerTwo .col-lg-7 .text p span{
+    background-color: var(--secondaryColor);
+    margin-left: 150px;
+    font-size: 16px;
+    
+    
+    text-align: center;
+    border-radius: 50%;
+} 
+    
+ 
+#bannerTwo .col-lg-7 .text p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+    
+}
+#bannerTwo .col-lg-7 .text a{
+color: black;
+font-family: Josefin Sans;
+font-size: 18px;
+font-weight: 600;
+letter-spacing: 0em;
+text-align: center;
+margin-left: 150px;
+
+}
+#bannerTwo .col-lg-7 .text a:hover{
+    color: #F1F3F4;
+    background-color: var(--secondaryColor);
+    padding: 15px 20px;
+}
+/* bannertwo ends here */
+/* sale system starts here */
+
+#selling .col-lg-3{
+text-align: center;
+}
+#selling .col-lg-3 span{
+    background-color: #F1F3F4;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#selling .col-lg-3 span:hover{
+    color: #FF6F61;
+}
+#selling .col-lg-3  h3{
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#FF6F61;
+
+}
+#selling .col-lg-3  p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+
+
+/* sale system ends here */
+/* story part starts here */
+#story{
+  margin: 80px 20px 20px 20px; 
+ 
+} 
+#story .col-lg-6{
+   height: 350px; 
+
+}  
+#story .col-lg-6 h3{
+font-family: Josefin Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 10px;
+
+}
+#story .col-lg-6 p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: justified;
+
+}
+
+#story .col-lg-6 a span{
+    margin-left:200px;
+    box-shadow:#A6AAB7 ;
+    display: inline-block;
+}
+
+
+/* story part ends here */
+/* service starts here */
+#service{
+    margin: 50px 10px 10px 10px;
+    text-align: center;
+}
+#service .col-lg-3 span{
+    background-color: #FF6F61;
+    color: #F1F3F4;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+}
+#service .col-lg-3 h5{
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: inline-block;
+    
+}
+#service .col-lg-3 p{
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+/* service ends here */
+/* team starts here */
+#team .expart h3{
+text-align: center;
+font-family: Josefin Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: center;
+margin: 30px 0;
+
+}
+#team .col-lg-3{
+   margin: 10px 0 20px 0;
+}
+#team .col-lg-3 img{
+width: 250px;
+height: 250px;
+}
+#team .col-lg-3 .info{
+    background-color: #11161E14;
+    background-size: cover;
+    width: 250px;
+    padding: 10px;
+}
+#team .col-lg-3 .info h5{
+font-family: Josefin Sans;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+color: var(--primaryColor);
+   
+}
+#team .col-lg-3 .info p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: var(--secondaryColor);
+}
+#team .col-lg-3 .info ul{
+    text-align: center;
+    
+}
+#team .col-lg-3 .info ul li{
+    display: inline-block;
+    text-align: center;
+}
+#team .col-lg-3 .info ul li a span{
+    color: var(--primaryColor);
+}
+#team .col-lg-3 .info ul li a{
+    margin: 0 4px;
+}
+#team .col-lg-3 .info ul li a span:hover{
+    color: var(--secondaryColor);
+}
+
+/* team ends here */
+/* customer starts here */
+#customer{
+    margin: 30px 0 10px 0;
+}
+
+
+/* customer ends here */
+/* intagram starts here */
+#instagram .heading h3{
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 30px  0;
+}
+#instagram .col-2{
+    background-image: url(../images/Image\ \(1\).png);
+    background-position: center;
+    width: 170px;
+    height: 200px;
+    box-sizing: 0;
+    margin: 0 10px;
+    text-align: center;
+}
+#instagram .col-2 span{
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* instagram ends here */
+/* email part starts here */
+#email{
+    background-color: #F1F3F4;
+    height: 180px;
+    margin: 30px 0 0 0 ;
+    
+}
+#email .col-6{
+    text-align: left;
+    margin: 30px 0 20px 0;
+
+}
+#email .col-6 h3{
+font-family: Josefin Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#email .col-6 p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#email .col-6 input{
+    background-color:  #FFFFFF;
+    margin-top: 20px;
+   margin-left: 20px;
+   width: 220px;
+   height: 40px;
+   border: none;
+}
+#email .col-6 button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    background-color: #FFFFFF;
+    font-family: Josefin Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+#email .col-6 button:hover{
+    background-color: var(--secondaryColor);
+    color: #F1F3F4;
+    transition: 0.35s;
+}
+
+/* email part ends here */
+/* footer  starts here */
+#footer{
+    background-color: #F1F3F4;
+}
+#footer .col-3 img{
+    font-family: Josefin Sans;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 2px 0 6px 0;
+}
+#footer .col-3 p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+margin: 0 0 10px 0;
+
+}
+
+#footer .col-3 .logo li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+}
+#footer .col-3 .logo li span{
+    color: var(--primaryColor);
+}
+#footer .col-3 .logo li span:hover{
+    color: var(--secondaryColor);
+    transition: .35s;
+}
+#footer .col-2 h4{
+font-family: Josefin Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: left;
+margin: 20px 0 10px 0;
+
+}
+#footer .col-2 ul{
+    margin:  22px 0 8px 0;
+}
+#footer .col-2 ul li{
+    margin:4px 0  ;
+}
+#footer .col-2 ul li a{
+    color: var(--primaryColor);
+    margin: 4px 0 ;
+}
+#footer .col-2 ul li a:hover{
+    color: var(--secondaryColor);
+    transition: .40s ease-in-out;
+}
+#footer .col-3 h4{
+font-family: Josefin Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: left;
+margin: 25px 0 17px 0;
+}
+#footer .col-3 ul li a{
+   margin: 5px 0 2px 0;
+   color: var(--primaryColor);
+}
+#footer .col-3 ul li a:hover{
+   color: var(--secondaryColor);
+   transition: 0.30s;
+}
+
+/* footer  ends here */
+/* footer last part starts here */
+
+#last-part .col-6 p{
+    color: var(--primaryColor);
+}
+#last-part .col-6 p span{
+    color:#FF6F61;
+}
+
+/* footer last part ends here */
